@@ -16,19 +16,42 @@
         <h1 class="text-light text-center pt-4 pb-4">Bootstrap Form Demo</h1>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid bg-dark">
         <form>
-            <div class="form-row container">
-                <label class="col-sm-12 col-md-12">
-                    First Name:
-                    <input class="form-control" name=fName type="text" required>
-                </label>
-                <label class="col-sm-12 col-md-12">
-                    Last Name:
-                    <input class="form-control" name=lName type="text" required>
-                </label>
-            </div>
 
+            <div class="row d-flex-column justify-content-center">
+
+                <div class="col-sm-12 col-md-6 bg-primary">
+
+                    <div class="form-row container">
+                        <label class="col-sm-12 col-md-6">
+                            First Name:
+                            <input class="form-control" name=fName type="text" required>
+                        </label>
+                        <label class="col-sm-12 col-md-6">
+                            Last Name:
+                            <input class="form-control" name=lName type="text" required>
+                        </label>
+                    </div>
+                    <div class="form-row container">
+                        <label class="col-sm-12 col-md-6">
+                            Email:
+                            <input class="form-control" name=email type="email" required>
+                        </label>
+                        <label class="col-sm-12 col-md-6">
+                            Phone:
+                            <input class="form-control" name=phone type="phone" required>
+                        </label>
+                    </div>
+                    <label class="form-row">
+                        Free Text:
+                        <textarea class="form-control" name=freeText rows="10" required></textarea>
+                    </label>
+                    <div class="form-row d-flex justify-content-center">
+                        <button class="btn btn-success m-4 w-25">Go</button>
+                    </div>
+                </div>
+            </div>
 
         </form>
     </div>
